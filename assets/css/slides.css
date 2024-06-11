@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    width: 100%;
+}
+.Container > .SlidesShow{
+    overflow: hidden;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    height: 300px;
+    list-style-type: none;
+}
+.Container > .SlidesShow > .myslides{
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+}
+.Container > .SlidesShow > .myslides > img{
+    width: 100%;
+    height: 100%;
+}
+.Container > .SlidesShow > .myslides > .imgnumber{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: aqua;
+}
+.Container > .SlidesShow > .myslides > .imgtext{
+    position: absolute;
+    left: 260px;
+    bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: aqua;
+}
+.Container > .SlidesShow > .next{
+    right: 3px;
+}
+.Container > .SlidesShow > .ex{
+    left: 3px;
+}
+.Container > .SlidesShow > .ex, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 135px;
+    background-color: transparent;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+}
+.Container > .SlidesShow > .ex:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.Container > .SlidesShow > .dots{
+    left: 280px;
+    bottom: 5px;
+    align-items: center;
+    position: absolute;
+}
+.Container > .SlidesShow > .dots > .dot{
+    width: 10px;
+    height: 10px;
+    background-color: #9f9f9f;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .4s;
+    cursor: pointer;
+    opacity: .7;
+}
+.Container > .SlidesShow > .dots > .dot:hover{
+    background-color: #414040;
+    opacity: 1;
+}
